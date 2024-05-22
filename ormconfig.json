@@ -1,0 +1,13 @@
+[
+    {
+      "name": "default",
+      "type": "postgres",
+      "host": "aws-0-eu-central-1.pooler.supabase.com",
+      "port": 5432,
+      "username": "postgres.bcsvzbnfjvecvjnmpuqb",
+      "password": "MzTY7F1EsJSaoXOd",
+      "database": "postgres",
+      "synchronize": true,
+      "entities": ["entities/*.ts"]
+    }
+  ]

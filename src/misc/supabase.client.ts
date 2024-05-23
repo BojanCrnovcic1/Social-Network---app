@@ -3,6 +3,6 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_KAY = process.env.SUPABASE_KAY;
+const SUPABASE_ANON_KAY = process.env.SUPABASE_ANON_KAY;
 
-export const supabase = createClient(SUPABASE_URL, SUPABASE_KAY);
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KAY);

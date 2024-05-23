@@ -37,11 +37,11 @@ import multer from 'multer';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: DatabaseConfiguration.hostname,
+      host: process.env.HOST,
       port: 5432,
-      username: DatabaseConfiguration.username,
-      password: DatabaseConfiguration.password,
-      database: DatabaseConfiguration.database,
+      username: process.env.USERNAME,
+      password: process.env.PASSWORD,
+      database: process.env.DATABASE,
       entities: [
         Comment,
         Like,

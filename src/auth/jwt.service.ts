@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService as NestJwtService } from '@nestjs/jwt';
-import { jwtSecret } from 'config/jwt.secret';
+import { jwtSecret } from 'src/config/jwt.secret';
 import { ApiResponse } from 'src/misc/api.response.class';
 
 @Injectable()

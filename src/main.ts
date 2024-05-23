@@ -1,7 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { StorageConfig } from 'config/storage.config';
+import { StorageConfig } from 'src/config/storage.config';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {

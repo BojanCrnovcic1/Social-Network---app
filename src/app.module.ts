@@ -1,14 +1,14 @@
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 import { AppController } from './controllers/app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DatabaseConfiguration } from 'config/database.configuration';
+import { DatabaseConfiguration } from 'src/config/database.configuration';
 import { Comment } from './entities/comment.entity';
 import { Like } from './entities/like.entity';
 import { PosT } from './entities/post.entity';
 import { Stories } from './entities/stories.entity';
 import { User } from './entities/user.entity';
 import { JwtModule } from '@nestjs/jwt';
-import { jwtSecret } from 'config/jwt.secret';
+import { jwtSecret } from 'src/config/jwt.secret';
 import { AuthController } from './controllers/auth.controller';
 import { UserController } from './controllers/api/user.controller';
 import { UserService } from './services/user/user.service';

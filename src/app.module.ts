@@ -37,7 +37,7 @@ import multer from 'multer';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.HOST,
+      host: DatabaseConfiguration.hostname,
       port: 5432,
       username: DatabaseConfiguration.username,
       password: DatabaseConfiguration.password,
@@ -51,7 +51,7 @@ import multer from 'multer';
         User,
         ViewedStories,
       ],
-      synchronize: true,
+      synchronize: false,
       ssl: {
         rejectUnauthorized: false
       }
